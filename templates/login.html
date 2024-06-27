@@ -1,0 +1,198 @@
+{% if msg %}
+  {{ msg }}
+{% endif %}
+
+<!-- <form action="" method="POST">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit">
+</form> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <style>
+        
+  .nav {
+    background-color: hsl(99, 90%, 58%) ;
+    padding: 20px;
+  }
+
+  .logo h1 {
+    margin: 0px;
+    color: black;
+    text-align:left;
+  }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        <h1>FarmEasy</h1>
+    </div>
+</div>
+      <div class="container">
+        <div class="box form-box">
+            <header>Login</header>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field">
+                    
+             <a href="http://192.168.116.86:5000/">submit</a>
+                </div>
+                <div class="links">
+                    Don't have account? <a href="register.html">Sign Up Now</a>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmEasy - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/flat-lay-watercolor-stain-paper_23-2149061991.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1711411200&semt=ais');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(71, 2, 78); /* Dark purple text color */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(210, 190, 225, 0.8); /* Light palish purple background */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: rgb(71, 2, 78); /* Dark purple text color */
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: rgb(71, 2, 78); /* Dark purple text color */
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00; /* Yellow hover color */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 120px auto 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: rgb(71, 2, 78); /* Dark purple text color */
+        }
+
+        .input-group {
+            margin-bottom: 20px; /* Add margin bottom to create even spacing between input groups */
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: rgb(71, 2, 78); /* Dark purple text color */
+        }
+
+        .input-group input {
+            width: calc(100% - 22px); /* Adjusted width */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px; /* Add margin top to create space between the button and the input */
+            background-color: #7d57c2; /* Dark purple button color */
+            color: #fff; /* White text color */
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #5b3b8e; /* Hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>FarmEasy</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Login to FarmEasy</h1>
+        <form>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your Gmail">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn"><a href="/login.html">Login</a></button>
+        </form>
+    </div>
+</body>
+
+</html>

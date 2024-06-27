@@ -1,0 +1,330 @@
+{% if msg %}
+  {{ msg }}
+{% endif %}
+
+<!-- <form action="" method="POST">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="email" name="email">
+    <input type="text" name="age">
+    <input type="submit">
+</form> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .nav {
+    background-color: hsl(99, 90%, 58%) ;
+    padding: 20px;
+  }
+
+  .logo h1 {
+    margin: 5px;
+    
+    color: black;
+  }
+
+  .container {
+    background-image: url('chris-ensminger-yJDZTDeHeG8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-box {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .field .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .field .btn:hover {
+    background-color: #45a049;
+  }
+
+  .links {
+    margin-top: 20px;
+  }
+
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <div class="logo">
+        <h1>FarmEasy</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="box form-box">
+        
+        <header><h1><b>Sign Up</b></h1></header>
+        <br>
+        <form action="" method="post">
+            <div class="field input">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" autocomplete="off" required>
+            </div>
+            <div class="field input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" autocomplete="off" required>
+          </div>
+
+            <div class="field input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+            </div>
+
+            <div class="field input">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" autocomplete="off" required>
+            </div>
+
+          
+
+            <div class="field">
+                <input type="submit" class="btn" name="submit" value="Register" required>
+            </div>
+
+            <div class="links">
+                Already a member? <a href="login.html">Sign In</a>
+            </div>
+        </form>
+      
+    </div>
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmEasy - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/flat-lay-watercolor-stain-paper_23-2149061991.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1711411200&semt=ais');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #7d57c2; /* Purple color */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo h1 {
+            color: #fff; /* White text color */
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff; /* White text color */
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00; /* Yellow hover color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 120px auto 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333; /* Dark text color */
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #7d57c2; /* Purple color */
+            color: #fff; /* White text color */
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #5b3b8e; /* Darker purple color on hover */
+        }
+
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>FarmEasy</h1>
+        </div>
+        <!-- <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Logout</a>
+        </div> -->
+    </div>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+      
+       
+        <button class="btn" onclick="signUp()">Sign Up</button>
+        <div id="message"></div>
+        <div class="links">
+          Already a member? <a href="login.html">Sign In</a>
+      </div>
+    </div>
+
+    <script>
+        function signUp() {
+            // Retrieve input values
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+        
+       
+
+            // Here you can perform validation checks and send data to server
+
+            // Example message after sign up
+            var message = "Sign up successful for user: " + username;
+
+            // Display message
+            document.getElementById('message').innerHTML = message;
+        }
+    </script>
+</body>
+
+</html>
